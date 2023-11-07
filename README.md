@@ -1,4 +1,5 @@
 ## 如何运行程序
+因为最后--force push 导致历史commit记录丢失，请谅解
 演示地址：[http://xiaohu.hanshubo.com/demo.mp4](http://xiaohu.hanshubo.com/demo.mp4)
 ### 1，本地配置数据库
 使用sql文件创建对应数据库
