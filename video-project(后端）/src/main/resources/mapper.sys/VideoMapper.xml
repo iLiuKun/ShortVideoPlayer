@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.sys.mapper.VideoMapper">
+    <select id="selectVideosByCategoryId" resultType="com.example.sys.entity.Video" parameterType="Integer">
+        SELECT * FROM video WHERE category_id = #{categoryId}
+    </select>
+    <select id="getUserIdByVideoId" resultType="Integer" parameterType="Integer">
+        SELECT user_id FROM video WHERE id = #{videoId}
+    </select>
+    <select id="findVideosByUserId" resultType="com.example.sys.entity.Video" parameterType="Integer">
+        SELECT * FROM video WHERE user_id = #{userId}
+    </select>
+    <select id="findFavoriteVideosByUserId" resultType="com.example.sys.entity.Video" parameterType="Integer">
+        SELECT v.*
+        FROM video v
+                 JOIN user_favorite uf ON v.id = uf.video_id
+        WHERE uf.user_id = #{userId}
+    </select>
+</mapper>
