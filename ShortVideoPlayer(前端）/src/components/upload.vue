@@ -46,7 +46,7 @@
   const userStore = useUserStore();
   const userId = userStore.userInfo.userId; // 用户ID
   const visible = ref(false);
-  const token = ref('cRmYPEHlq_MXaaXDumyuSAytL0JXd_5AKIyS9KyU:VDklHhxanRx1S0brH3y0BooNXFI=:eyJzY29wZSI6InhpYW9odXRlYW0iLCJkZWFkbGluZSI6MTczNTM2NzUyMn0=');
+  const token = ref('cRmYPEHlq_MXaaXDumyuSAytL0JXd_5AKIyS9KyU:7EzWFabljY2GqLttCq1U0UxPeEM=:eyJzY29wZSI6InhpYW9odXRlYW0iLCJkZWFkbGluZSI6MjA1OTM3MjU4MH0=');
   // const dialogOfUpload = ref(false);
   const fileList = ref([]);
   const progress = ref(0);
@@ -65,7 +65,7 @@
   
 
   async function beforeUpload() {
-    token.value = 'cRmYPEHlq_MXaaXDumyuSAytL0JXd_5AKIyS9KyU:VDklHhxanRx1S0brH3y0BooNXFI=:eyJzY29wZSI6InhpYW9odXRlYW0iLCJkZWFkbGluZSI6MTczNTM2NzUyMn0=';
+    token.value = 'cRmYPEHlq_MXaaXDumyuSAytL0JXd_5AKIyS9KyU:7EzWFabljY2GqLttCq1U0UxPeEM=:eyJzY29wZSI6InhpYW9odXRlYW0iLCJkZWFkbGluZSI6MjA1OTM3MjU4MH0=';
     if (token.value == '') {
       return false;
     }
